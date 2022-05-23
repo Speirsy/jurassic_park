@@ -15,7 +15,7 @@ describe('Park', function() {
     dinosaur1 = new Dinosaur('T-Rex', 'carnivore', 25);
     dinosaur2 = new Dinosaur('Diplodicus', 'herbivore', 200);
     dinosaur3 = new Dinosaur('Stegasuraus', 'omnivore', 8);
-    dinosaur4 = new Dinosaur('T-rex', 'carnivore', 40);
+    dinosaur4 = new Dinosaur('T-Rex', 'carnivore', 40);
 
   })
 
@@ -77,7 +77,7 @@ describe('Park', function() {
     park.addDinosaur(dinosaur2);
     park.addDinosaur(dinosaur3);
     park.addDinosaur(dinosaur4); 
-  actual = park.findDinosOfSpecies(dinosaur1);
+  actual = park.findDinosOfSpecies("T-Rex");
   assert.deepStrictEqual(actual, [dinosaur1, dinosaur4])
   });
 

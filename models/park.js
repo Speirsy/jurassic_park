@@ -42,8 +42,8 @@ Park.prototype.findMostPopularDino = function(dinosaur){
 Park.prototype.findDinosOfSpecies = function(dinosaurSpecies){
     let banana = []
     for (let dinosaur of this.collectionOfDinosaurs){
-    if(dinosaur.species === dinosaurSpecies)
-    banana.push(dinosaur);
+    if(dinosaur.species === dinosaurSpecies){
+    banana.push(dinosaur)};
     };
     return banana
 };
